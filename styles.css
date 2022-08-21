@@ -1,0 +1,103 @@
+body {
+    box-sizing: border-box;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(#212530, #191D28);
+    width: 20%;
+    height: 50vh;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.icon {
+    background-color: #272D33;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.state-1 h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.state-1 p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 100px;
+}
+
+.rating-val {
+    background-color: #272D33;
+    padding: 15px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    color: hsl(216, 12%, 54%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-val:hover {
+    transition: 0.4s;
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    cursor: pointer;
+}
+
+.button {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    transition: 0.4s;
+}
+
+.state-2 {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+@media (max-width: 998px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
